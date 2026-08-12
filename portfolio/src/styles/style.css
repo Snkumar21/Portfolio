@@ -215,6 +215,175 @@ body {
     margin-bottom: 15px;
 }
 
+/* ABOUT PAGE */
+.about {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.about > h2 {
+    color: #0091ff;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.about-intro {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    text-align: center;
+    color: #bbb;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 70px;
+}
+
+.about-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid #0091ff;
+    box-shadow: 0 0 30px rgba(0, 145, 255, 0.15);
+    transition: 0.3s ease;
+}
+
+.about-img:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 10px 40px rgba(0, 145, 255, 0.25);
+}
+
+/* Content Text */
+.content-text {
+    flex: 1;
+}
+
+.content-text h3 {
+    color: #0091ff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.youtube-icon {
+    color: #0091ff;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+
+.youtube-icon:hover {
+    color: #ff0000;
+    transform: scale(1.15);
+}
+
+.content-text p {
+    color: #bbb;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/* Founder */
+.about-highlight {
+    color: #0091ff !important;
+    font-weight: bold;
+}
+
+.about-highlight span {
+    color: #ffffff;
+    font-weight: normal;
+    margin-left: 8px;
+}
+
+.about-founder-text strong {
+    color: #0091ff;
+}
+
+/* Details */
+.about-detail {
+    display: flex;
+    gap: 8px;
+}
+
+.about-detail strong {
+    color: #0091ff;
+}
+
+.about-detail span {
+    color: #ffffff;
+}
+
+/* Education */
+.education {
+    margin-top: 25px;
+}
+
+.education h4 {
+    color: #0091ff;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.education ul {
+    padding-left: 20px;
+}
+
+.education li {
+    color: #bbb;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* ABOUT SECTIONS */
+.about-section {
+    margin-top: 50px;
+}
+
+.about-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0091ff;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.about-section h3 svg {
+    font-size: 22px;
+}
+
+.about-section ul {
+    padding-left: 25px;
+}
+
+.about-section li {
+    color: #bbb;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.about-section li strong {
+    color: #0091ff;
+}
+
 /* FOOTER */
 .footer {
     display: flex;
