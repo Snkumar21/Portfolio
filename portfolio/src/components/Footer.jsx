@@ -4,15 +4,12 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <h3>
-                    Nitish Kumar Singh
-                </h3>
-
-                <p>
-                    Software Developer | AI/ML Enthusiast |
-                    Full-Stack Developer
-                </p>
-
+                <div className="footer-bottom">
+                    <p>
+                        © 2026 Nitish Kumar Singh.
+                        All Rights Reserved.
+                    </p>
+                </div>
                 <div className="footer-socials">
                     <a
                         href="https://github.com/Snkumar21"
@@ -41,13 +38,6 @@ function Footer() {
                         <FaInstagram />
                     </a>
                 </div>
-            </div>
-
-            <div className="footer-bottom">
-                <p>
-                    © 2026 Nitish Kumar Singh.
-                    All Rights Reserved.
-                </p>
             </div>
         </footer>
     );

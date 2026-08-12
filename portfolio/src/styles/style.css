@@ -64,6 +64,24 @@ body {
     justify-content: center;
     gap: 70px;
     padding: 60px 8%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+.intro > * {
+    position: relative;
+    z-index: 1;
 }
 
 .intro-img img {
@@ -149,8 +167,9 @@ body {
     gap: 8px;
     border: none;
     border-radius: 25px;
-    background: #333;
+    background: #0091ff;
     color: #ffffff;
+    border: 2px solid #fff;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -158,7 +177,9 @@ body {
 }
 
 .intro-buttons button:hover {
-    background: #0091ff;
+    background: #fff;
+    color: #0091ff;
+    border: 2px solid #0091ff;
     transform: translateY(-3px);
 }
 
@@ -196,25 +217,33 @@ body {
 
 /* FOOTER */
 .footer {
-    text-align: center;
-    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 5%;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     color: #aaa;
 }
 
-.footer h3 {
-    color: #0091ff;
-    margin-bottom: 10px;
+.footer-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .footer-socials {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 15px;
-    margin: 20px 0;
+    margin: 0;
 }
 
 .footer-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #ffffff;
     font-size: 20px;
     transition: 0.3s ease;
@@ -223,4 +252,14 @@ body {
 .footer-socials a:hover {
     color: #0091ff;
     transform: translateY(-3px);
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
 }

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { FaRocket, FaArrowRight, FaBuilding} from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import profileLogo from "../assets/Img/Profile/Logo.jpg";
+import backgroundImage from "../assets/Img/Profile/bg.png";
 
 function Home() {
     const navigate = useNavigate();
@@ -26,10 +28,10 @@ function Home() {
     }, []);
 
     return (
-        <section className="intro">
+        <section className="intro" style={{backgroundImage: `url(${backgroundImage})`}}>
             {/* Profile Image */}
             <div className="intro-img">
-                <img src="./assets/Img/Profile/Logo.jpg" alt="Nitish Kumar Singh" />
+                <img src={profileLogo} alt="Nitish Kumar Singh" />
             </div>
 
             {/* Hero Content */}
