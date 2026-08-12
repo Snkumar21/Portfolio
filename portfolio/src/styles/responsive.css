@@ -1,0 +1,85 @@
+@media (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+        gap: 35px;
+    }
+
+    .intro-img img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .intro-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .intro-buttons {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 550px) {
+    .navbar-logo h2 {
+        font-size: 1.3rem;
+    }
+
+    .nav a {
+        font-size: 0.75rem;
+    }
+
+    .nav a svg {
+        display: none;
+    }
+
+    .intro {
+        min-height: auto;
+        padding: 50px 20px;
+    }
+
+    .intro-img img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .intro-role {
+        font-size: 0.9rem;
+    }
+
+    .intro-description {
+        font-size: 0.9rem;
+    }
+
+    .founder-badge {
+        font-size: 0.85rem;
+    }
+
+    .intro-buttons {
+        flex-direction: column;
+    }
+
+    .intro-buttons button {
+        width: 190px;
+    }
+
+    .page-section h1 {
+        font-size: 2.2rem;
+    }
+}
