@@ -29,10 +29,7 @@ function Home() {
         <section className="intro">
             {/* Profile Image */}
             <div className="intro-img">
-                <img
-                    src="/Img/New logo.jpg"
-                    alt="Nitish Kumar Singh"
-                />
+                <img src="./assets/Img/Profile/Logo.jpg" alt="Nitish Kumar Singh" />
             </div>
 
             {/* Hero Content */}
