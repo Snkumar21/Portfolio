@@ -156,6 +156,52 @@
     }
 }
 
+@media (max-width: 668px) {
+    /* SKILLS MOBILE */
+    .skills {
+        width: 90%;
+        padding: 50px 0;
+    }
+
+    .skills > h2 {
+        font-size: 2.2rem;
+    }
+
+    .skills-intro {
+        font-size: 0.95rem;
+        margin-bottom: 35px;
+    }
+
+    .skills > h3 {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+
+    .skills-list {
+        grid-template-columns:
+            repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .skills-list li {
+        min-height: 105px;
+        padding: 15px 8px;
+    }
+
+    .skill-icon {
+        font-size: 30px;
+    }
+
+    .skill-image {
+        width: 35px;
+        height: 35px;
+    }
+
+    .skill-name {
+        font-size: 0.75rem;
+    }
+}
+
 @media (max-width: 600px) {
     /* FEATURED MOBILE */
     .featured {
