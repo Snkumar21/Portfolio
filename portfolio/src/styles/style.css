@@ -920,6 +920,27 @@ body {
     margin-bottom: 15px;
 }
 
+.project-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 12px 0;
+    font-size: 0.85rem;
+}
+
+.project-date,
+.project-updated {
+    display: block;
+}
+
+.project-date {
+    color: #0091ff;
+}
+
+.project-updated {
+    color: #aaa;
+}
+
 /* TECHNOLOGIES */
 .project-tech {
     display: block;
@@ -955,10 +976,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* =========================
-   CONTACT SECTION
-========================= */
-
+/* CONTACT SECTION */
 .contact {
     width: 90%;
     max-width: 1200px;
@@ -966,9 +984,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 /* Heading */
-
 .contact h2 {
     color: #0091ff;
     text-align: center;
@@ -984,9 +1000,7 @@ body {
     text-underline-offset: 12px;
 }
 
-
 /* Intro */
-
 .contact-intro {
     max-width: 800px;
     margin: 0 auto 50px;
@@ -996,9 +1010,7 @@ body {
     line-height: 1.7;
 }
 
-
 /* Main Contact Layout */
-
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1007,9 +1019,7 @@ body {
     margin: 0;
 }
 
-
 /* Cards */
-
 .contact-form,
 .contact-info {
     background: rgba(0, 0, 0, 0.18);
@@ -1026,9 +1036,7 @@ body {
     box-shadow: 0 0 25px rgba(0, 145, 255, 0.25);
 }
 
-
 /* Card Headings */
-
 .contact-form h3,
 .contact-info h3 {
     color: #0091ff;
@@ -1043,27 +1051,21 @@ body {
     margin-bottom: 25px;
 }
 
-
 /* Form */
-
 .contact-form form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-
 /* Form Row */
-
 .contact-form .form-row {
     display: flex;
     gap: 15px;
     width: 100%;
 }
 
-
 /* Inputs */
-
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -1079,57 +1081,41 @@ body {
     transition: 0.3s ease;
 }
 
-
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #0091ff;
     box-shadow: 0 0 10px rgba(0, 145, 255, 0.25);
 }
 
-
 /* Textarea */
-
 .contact-form textarea {
     min-height: 160px;
     resize: vertical;
 }
 
-
 /* Submit Button */
-
 .contact-form button {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-
     background: #333;
     color: #fff;
-
     border: none;
     padding: 13px 20px;
-
     border-radius: 30px;
-
     cursor: pointer;
-
     font-size: 17px;
     font-weight: bold;
-
     transition: 0.3s ease;
 }
-
 
 .contact-form button:hover {
     background: #0091ff;
     transform: translateY(-2px);
 }
 
-
-/* =========================
-   CONTACT DETAILS
-========================= */
-
+/* CONTACT DETAILS */
 .contact-details {
     display: flex;
     flex-direction: column;
@@ -1137,13 +1123,11 @@ body {
     margin-top: 25px;
 }
 
-
 .contact-item {
     display: flex;
     align-items: flex-start;
     gap: 18px;
 }
-
 
 .contact-item > svg {
     color: #0091ff;
@@ -1152,13 +1136,11 @@ body {
     min-width: 22px;
 }
 
-
 .contact-item h4 {
     margin: 0 0 5px;
     color: #0091ff;
     font-size: 16px;
 }
-
 
 .contact-item p {
     margin: 0;
@@ -1166,33 +1148,25 @@ body {
     line-height: 1.5;
 }
 
-
 .contact-item a {
     color: #ccc;
     text-decoration: none;
     transition: 0.3s ease;
 }
 
-
 .contact-item a:hover {
     color: #0091ff;
 }
 
 
-/* =========================
-   AVAILABILITY
-========================= */
-
+/* AVAILABILITY */
 .availability {
     margin-top: 30px;
     padding: 20px;
-
     border-radius: 12px;
-
     background: rgba(0, 145, 255, 0.08);
     border-left: 3px solid #0091ff;
 }
-
 
 .availability h4 {
     color: #0091ff;
@@ -1200,52 +1174,38 @@ body {
     font-size: 17px;
 }
 
-
 .availability p {
     color: #bbb;
     line-height: 1.6;
     margin: 0;
 }
 
-
-/* =========================
-   SOCIAL ICONS
-========================= */
-
+/* SOCIAL ICONS */
 .social-icons {
     display: flex;
     gap: 15px;
     margin-top: 30px;
 }
 
-
 .social-icons a {
     width: 42px;
     height: 42px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 50%;
-
     color: #fff;
     background: #222;
-
     font-size: 19px;
-
     text-decoration: none;
-
     transition: 0.3s ease;
 }
-
 
 .social-icons a:hover {
     background: #0091ff;
     color: #fff;
     transform: translateY(-4px);
 }
-
 
 /* FOOTER */
 .footer {
