@@ -11,7 +11,8 @@ import {
     FaTableTennis,
     FaExclamationCircle,
     FaRobot,
-    FaGamepad
+    FaGamepad,
+    FaBriefcase
 } from "react-icons/fa";
 
 import hubverse from "../assets/Img/Project/HubVerse.png";
@@ -29,6 +30,8 @@ import gamingLms from "../assets/Img/Project/gaming learning management system.p
 import nexusArena from "../assets/Img/Project/Nexus Arena.png";
 import ericChatBotV3 from "../assets/Img/Project/Eric chat bot v-3.png";
 import nexusTechworks from "../assets/Img/Project/Nexus Techworks.png";
+import PrathameshBD from "../assets/Img/Project/Prathamesh Builders and Developers.png"
+import { FaBuilding } from "react-icons/fa6";
 
 function Projects() {
     const projects = [
@@ -201,15 +204,27 @@ function Projects() {
         },
 
         {
-            image: nexusTechworks,
-            title: "Nexus Arena - Education Platform",
+            image: PrathameshBD,
+            title: "Prathamesh Builders & Developers",
             description:
-                "A centralized education platform that compares and aggregates courses from multiple learning platforms based on ratings, reviews, pricing, certification value, and popularity.",
-            icon: <FaGraduationCap />,
-            date: "Feb 2026 – Present",
-            lastUpdated: "GitHub: Apr 2026",
-            technologies: "React.js • Node.js • MongoDB • Firebase",
-            link: "https://github.com/Snkumar21/Nexus-Arena"
+                "A premium digital experience designed to reflect the company's values, trust, and excellence in construction. The website focuses on telling the company's story, showcasing its achievements, and building confidence among future customers and investors.",
+            icon: <FaHome />,
+            date: "Jul 2026 – Present",
+            lastUpdated: "GitHub: Jul 22, 2026",
+            technologies: "React.js • JavaScript • CSS",
+            link: "https://github.com/Snkumar21/Prathamesh-Builders-and-Developers---Portfolio-Application.git"
+        },
+
+        {
+            image: nexusTechworks,
+            title: "Nexus Techworks - Web Application",
+            description:
+                "A personal milestone focused on learning, teaching, and growing with students. This web application represents the digital presence of Nexus Techworks and its technology-focused initiatives.",
+            icon: <FaBriefcase />,
+            date: "Jul 2026 – Present",
+            lastUpdated: "GitHub: Aug 2026",
+            technologies: "React.js • JavaScript • CSS",
+            link: "https://github.com/Snkumar21/Nexus-Technoworks"
         }
     ];
 
