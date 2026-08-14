@@ -1,5 +1,5 @@
 import { FaYoutube, FaTrophy, FaHandshake } from "react-icons/fa";
-import profileLogo from "../assets/Img/Profile/about img.jpg";
+import profileLogo from "../assets/Img/Profile/me 4.jpg";
 
 function About() {
     return (
