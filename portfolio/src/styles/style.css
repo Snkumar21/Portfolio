@@ -678,7 +678,9 @@ body {
     line-height: 1.7;
 }
 
-/* EXPERIENCE SECTION */
+/* =====================================================
+    EXPERIENCE SECTION
+===================================================== */
 .experience {
     width: 90%;
     max-width: 1100px;
@@ -828,7 +830,9 @@ body {
     font-size: 0.95rem;
 }
 
-/* FEATURED SECTION */
+/* =====================================================
+    FEATURED SECTION
+===================================================== */
 .featured {
     width: 90%;
     max-width: 1300px;
@@ -955,13 +959,21 @@ body {
     transform: translateX(5px);
 }
 
-/* SKILLS SECTION */
+/* =====================================================
+   SKILLS SECTION
+===================================================== */
+
 .skills {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 70px 0;
 }
+
+
+/* =====================================================
+   MAIN HEADER
+===================================================== */
 
 .skills > h2 {
     color: #0091ff;
@@ -971,32 +983,93 @@ body {
 }
 
 .skills-intro {
-    max-width: 800px;
-    margin: 0 auto 50px;
+    max-width: 850px;
+    margin: 0 auto 60px;
+
     text-align: center;
+
     color: #aaa;
+
     font-size: 1.05rem;
     line-height: 1.8;
 }
 
-/* CATEGORY TITLE */
-.skills > h3 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
+
+/* =====================================================
+   SKILLS SECTION
+===================================================== */
+.skills-section {
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 30px;
+    background:
+        rgba(255, 255, 255, 0.025);
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-/* SKILLS LIST */
+.skills-section:hover {
+    border-color:
+        rgba(0, 145, 255, 0.25);
+    box-shadow:
+        0 15px 40px
+        rgba(0, 145, 255, 0.06);
+}
+
+/* SECTION HEADER */
+.skills-section-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+/* CATEGORY ICON */
+.skills-section-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background:
+        rgba(0, 145, 255, 0.10);
+    border:
+        1px solid rgba(0, 145, 255, 0.20);
+    font-size: 27px;
+}
+
+/* CATEGORY TITLE */
+.skills-section-header h3 {
+    margin: 0 0 5px;
+    color: #ffffff;
+    font-size: 1.65rem;
+}
+
+/* CATEGORY DESCRIPTION */
+.skills-section-header p {
+    margin: 0;
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* SKILL CATEGORY */
 .skill-category {
     width: 100%;
 }
 
+/* SKILLS LIST */
 .skills-list {
     display: grid;
     grid-template-columns:
         repeat(auto-fit, minmax(140px, 1fr));
-    gap: 20px;
+    gap: 16px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -1005,7 +1078,7 @@ body {
 /* SKILL CARD */
 .skills-list li {
     min-height: 120px;
-    padding: 20px 10px;
+    padding: 18px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1014,99 +1087,192 @@ body {
     text-align: center;
     border-radius: 15px;
     background:
-        rgba(255, 255, 255, 0.03);
+        rgba(255, 255, 255, 0.035);
     border:
-        1px solid
-        rgba(255, 255, 255, 0.08);
+        1px solid rgba(255, 255, 255, 0.08);
     color: #ffffff;
-    cursor: pointer;
     transition:
         transform 0.3s ease,
         border-color 0.3s ease,
+        background 0.3s ease,
         box-shadow 0.3s ease;
 }
 
+/* SKILL CARD HOVER */
 .skills-list li:hover {
     transform: translateY(-7px);
+    background:
+        rgba(0, 145, 255, 0.06);
     border-color:
-        rgba(0, 145, 255, 0.6);
+        rgba(0, 145, 255, 0.55);
     box-shadow:
-        0 10px 30px
+        0 12px 30px
         rgba(0, 145, 255, 0.12);
 }
 
 /* ICON */
 .skill-icon {
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 38px;
+    transition:
+        transform 0.3s ease;
 }
 
+.skills-list li:hover .skill-icon {
+    transform: scale(1.1);
+}
+
+/* IMAGE ICON */
 .skill-image {
     width: 42px;
     height: 42px;
     object-fit: contain;
+    transition:
+        transform 0.3s ease;
 }
 
-/* NAME */
+.skills-list li:hover .skill-image {
+    transform: scale(1.08);
+}
+
+/* SKILL NAME */
 .skill-name {
+    color: #ddd;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #ddd;
+    line-height: 1.4;
 }
 
-/* ICON COLORS */
+/* TECHNICAL SKILL COLORS */
 .html .skill-icon {
     color: #e34f26;
 }
+
 .css .skill-icon {
     color: #1572b6;
 }
+
 .javascript .skill-icon {
     color: #f7df1e;
 }
+
 .react .skill-icon {
     color: #61dafb;
 }
+
 .java .skill-icon {
     color: #f89820;
 }
+
 .python .skill-icon {
     color: #3776ab;
 }
+
 .cpp .skill-icon {
     color: #00599c;
 }
+
 .node .skill-icon {
     color: #68a063;
 }
-.angular .skill-image {
-    width: 42px;
-}
-.mongodb .skill-icon {
-    color: #47a248;
-}
-.firebase .skill-icon {
-    color: #ffca28;
-}
-.tailwind .skill-icon {
-    color: #38bdf8;
-}
-.android .skill-icon {
-    color: #3ddc84;
-}
-.github .skill-icon {
+
+.express .skill-icon {
     color: #ffffff;
 }
+
 .git .skill-icon {
     color: #f05032;
 }
+
+.github .skill-icon {
+    color: #ffffff;
+}
+
+.mysql .skill-icon {
+    color: #00758f;
+}
+
+.mongodb .skill-icon {
+    color: #47a248;
+}
+
+.firebase .skill-icon {
+    color: #ffca28;
+}
+
+.dbms .skill-icon {
+    color: #0091ff;
+}
+
 .ai .skill-icon {
     color: #0091ff;
 }
+
 .automation .skill-icon {
     color: #0091ff;
+}
+
+.tailwind .skill-icon {
+    color: #38bdf8;
+}
+
+.android .skill-icon {
+    color: #3ddc84;
+}
+
+.pandas .skill-icon {
+    color: #150458;
+}
+
+.numpy .skill-icon {
+    color: #4dabcf;
+}
+
+.postman .skill-icon {
+    color: #ff6c37;
+}
+
+.figma .skill-icon {
+    color: #f24e1e;
+}
+
+.vercel .skill-icon {
+    color: #ffffff;
+}
+
+/* IMAGE BASED SKILLS */
+.angular .skill-image {
+    width: 42px;
+    height: 42px;
+}
+
+.c-language .skill-image {
+    width: 42px;
+    height: 42px;
+}
+
+.vscode .skill-image {
+    width: 42px;
+    height: 42px;
+}
+
+.render .skill-image {
+    width: 42px;
+    height: 42px;
+}
+
+.canva .skill-image {
+    width: 42px;
+    height: 42px;
+}
+
+/* LAST SECTION */
+.skills-section:last-child {
+    margin-bottom: 0;
 }
 
 /* =========================================================

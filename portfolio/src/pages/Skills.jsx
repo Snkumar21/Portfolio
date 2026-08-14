@@ -11,7 +11,13 @@ import {
     FaGitAlt,
     FaDatabase,
     FaRobot,
-    FaCogs
+    FaCogs,
+    FaUsers,
+    FaProjectDiagram,
+    FaComments,
+    FaLightbulb,
+    FaTasks,
+    FaPalette
 } from "react-icons/fa";
 
 import {
@@ -33,11 +39,12 @@ import angular from "../assets/Img/Skills_Icon/Angular.png";
 import cLanguage from "../assets/Img/Skills_Icon/C.png";
 import vscode from "../assets/Img/Skills_Icon/vs code.png";
 import render from "../assets/Img/Skills_Icon/render.jpeg";
+import canva from "../assets/Img/Skills_Icon/canva.png";
 
 function Skills() {
 
+    /* TECHNICAL SKILLS */
     const technicalSkills = [
-
         {
             name: "HTML5",
             icon: <FaHtml5 />,
@@ -105,18 +112,6 @@ function Skills() {
         },
 
         {
-            name: "Git",
-            icon: <FaGitAlt />,
-            className: "git"
-        },
-
-        {
-            name: "GitHub",
-            icon: <FaGithub />,
-            className: "github"
-        },
-
-        {
             name: "MySQL",
             icon: <SiMysql />,
             className: "mysql"
@@ -174,6 +169,27 @@ function Skills() {
             name: "NumPy",
             icon: <SiNumpy />,
             className: "numpy"
+        }
+    ];
+
+    /* KNOWN APPLICATIONS */
+    const applications = [
+        {
+            name: "Visual Studio Code",
+            image: vscode,
+            className: "vscode"
+        },
+
+        {
+            name: "Git",
+            icon: <FaGitAlt />,
+            className: "git"
+        },
+
+        {
+            name: "GitHub",
+            icon: <FaGithub />,
+            className: "github"
         },
 
         {
@@ -189,9 +205,9 @@ function Skills() {
         },
 
         {
-            name: "Visual Studio Code",
-            image: vscode,
-            className: "vscode"
+            name: "Canva",
+            image: canva,
+            className: "canva"
         },
 
         {
@@ -207,44 +223,223 @@ function Skills() {
         }
     ];
 
+    /* MANAGEMENT SKILLS */
+    const managementSkills = [
+        {
+            name: "Project Management",
+            icon: <FaProjectDiagram />,
+            className: "management"
+        },
+
+        {
+            name: "Team Collaboration",
+            icon: <FaUsers />,
+            className: "team"
+        },
+
+        {
+            name: "Communication",
+            icon: <FaComments />,
+            className: "communication"
+        },
+
+        {
+            name: "Problem Solving",
+            icon: <FaLightbulb />,
+            className: "problem-solving"
+        },
+
+        {
+            name: "Task Management",
+            icon: <FaTasks />,
+            className: "task"
+        },
+
+        {
+            name: "Leadership",
+            icon: <FaUsers />,
+            className: "leadership"
+        }
+    ];
+
+    /* DESIGN & CREATIVITY */
+    const designSkills = [
+        {
+            name: "UI/UX Design",
+            icon: <FaPalette />,
+            className: "uiux"
+        },
+
+        {
+            name: "Graphic Design",
+            icon: <FaPalette />,
+            className: "graphic"
+        },
+
+        {
+            name: "Figma",
+            icon: <SiFigma />,
+            className: "figma"
+        },
+
+        {
+            name: "Canva",
+            image: canva,
+            className: "canva"
+        },
+
+        {
+            name: "Creative Thinking",
+            icon: <FaLightbulb />,
+            className: "creative"
+        }
+    ];
+
+    /* REUSABLE SKILL LIST */
+    const renderSkills = (skills) => {
+        return (
+            <ul className="skills-list">
+                {skills.map((skill, index) => (
+                    <li
+                        key={index}
+                        className={skill.className}
+                    >
+                        {skill.icon && (
+                            <span className="skill-icon">
+                                {skill.icon}
+                            </span>
+                        )}
+                        {skill.image && (
+                            <img
+                                src={skill.image}
+                                alt={skill.name}
+                                className="skill-image"
+                            />
+                        )}
+                        <span className="skill-name">
+                            {skill.name}
+                        </span>
+                    </li>
+                ))}
+            </ul>
+        );
+    };
+
     return (
-        <section id="skills" className="skills">
-            <h2>🎯 Skills</h2>
+        <section
+            id="skills"
+            className="skills"
+        >
+            {/* HEADER */}
+            <h2>
+                🎯 Skills
+            </h2>
 
             <p className="skills-intro">
-                Technologies, tools, and platforms I use
-                to build modern software applications,
-                AI-powered solutions, and scalable
-                digital products.
+                A combination of technical expertise,
+                development tools, management abilities,
+                and creative skills that I use to build
+                modern digital products and solutions.
             </p>
 
-            <h3>💻 Technical Skills</h3>
+            {/* TECHNICAL SKILLS */}
+            <div className="skills-section">
+                <div className="skills-section-header">
+                    <span className="skills-section-icon">
+                        💻
+                    </span>
 
-            <div className="skill-category">
-                <ul className="skills-list">
-                    {technicalSkills.map((skill, index) => (
-                        <li
-                            key={index}
-                            className={skill.className}
-                        >
-                            {skill.icon && (
-                                <span className="skill-icon">
-                                    {skill.icon}
-                                </span>
-                            )}
-                            {skill.image && (
-                                <img
-                                    src={skill.image}
-                                    alt={skill.name}
-                                    className="skill-image"
-                                />
-                            )}
-                            <span className="skill-name">
-                                {skill.name}
-                            </span>
-                        </li>
-                    ))}
-                </ul>
+                    <div>
+                        <h3>
+                            Technical Skills
+                        </h3>
+
+                        <p>
+                            Programming languages,
+                            frameworks, databases,
+                            AI/ML, and development technologies.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="skill-category">
+                    {renderSkills(technicalSkills)}
+                </div>
+            </div>
+
+            {/* APPLICATIONS */}
+            <div className="skills-section">
+                <div className="skills-section-header">
+                    <span className="skills-section-icon">
+                        🛠️
+                    </span>
+
+                    <div>
+                        <h3>
+                            Known Applications & Tools
+                        </h3>
+
+                        <p>
+                            Development environments,
+                            collaboration tools, design
+                            applications, and deployment platforms.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="skill-category">
+                    {renderSkills(applications)}
+                </div>
+            </div>
+
+            {/* MANAGEMENT */}
+            <div className="skills-section">
+                <div className="skills-section-header">
+                    <span className="skills-section-icon">
+                        📊
+                    </span>
+
+                    <div>
+                        <h3>
+                            Management Skills
+                        </h3>
+
+                        <p>
+                            Skills that help me manage projects,
+                            collaborate with teams, and
+                            communicate effectively.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="skill-category">
+                    {renderSkills(managementSkills)}
+                </div>
+            </div>
+
+            {/* DESIGN */}
+            <div className="skills-section">
+                <div className="skills-section-header">
+                    <span className="skills-section-icon">
+                        🎨
+                    </span>
+
+                    <div>
+                        <h3>
+                            Design & Creativity
+                        </h3>
+
+                        <p>
+                            Creative and visual skills used to
+                            design engaging digital experiences
+                            and content.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="skill-category">
+                    {renderSkills(designSkills)}
+                </div>
             </div>
         </section>
     );

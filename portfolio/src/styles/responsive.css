@@ -14,6 +14,22 @@
         grid-template-columns:
             repeat(2, 1fr);
     }
+
+    /*Skills Section*/
+    .skills {
+        width: 92%;
+        padding: 60px 0;
+    }
+
+    .skills-section {
+        padding: 25px;
+    }
+
+    .skills-list {
+        grid-template-columns:
+            repeat(auto-fit, minmax(125px, 1fr));
+        gap: 14px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -443,6 +459,80 @@
     .projects-section {
         margin-top: 40px;
     }
+
+    /*Skills Section*/
+    .skills {
+        width: 92%;
+        padding: 50px 0;
+    }
+
+    /* MAIN HEADER */
+    .skills > h2 {
+        font-size: 2.2rem;
+    }
+
+    .skills-intro {
+        font-size: 0.95rem;
+        margin-bottom: 40px;
+    }
+
+    /* SECTION */
+    .skills-section {
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 17px;
+    }
+
+    /* SECTION HEADER */
+    .skills-section-header {
+        gap: 12px;
+        margin-bottom: 22px;
+    }
+
+    .skills-section-icon {
+        width: 45px;
+        height: 45px;
+        border-radius: 12px;
+        font-size: 22px;
+    }
+
+    .skills-section-header h3 {
+        font-size: 1.25rem;
+    }
+
+    .skills-section-header p {
+        font-size: 0.82rem;
+        line-height: 1.5;
+    }
+
+    /* SKILLS */
+    .skills-list {
+        grid-template-columns:
+            repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .skills-list li {
+        min-height: 105px;
+        padding: 15px 8px;
+    }
+
+    /* ICON */
+    .skill-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 32px;
+    }
+
+    .skill-image {
+        width: 38px;
+        height: 38px;
+    }
+
+    /* NAME */
+    .skill-name {
+        font-size: 0.82rem;
+    }
 }
 
 @media (max-width: 650px) {
@@ -641,5 +731,45 @@
 
     .view-more-btn {
         width: 100%;
+    }
+
+    /*Skills Section*/
+    .skills {
+        width: 94%;
+    }
+
+    .skills-section {
+        padding: 15px;
+    }
+
+    .skills-section-header {
+        align-items: flex-start;
+    }
+
+    .skills-section-icon {
+        width: 42px;
+        height: 42px;
+
+        font-size: 20px;
+    }
+
+    .skills-section-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .skills-section-header p {
+        font-size: 0.78rem;
+    }
+
+    .skills-list {
+        gap: 10px;
+    }
+
+    .skills-list li {
+        min-height: 100px;
+    }
+
+    .skill-name {
+        font-size: 0.78rem;
     }
 }
