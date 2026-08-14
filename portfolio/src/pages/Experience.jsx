@@ -1,7 +1,8 @@
 import {
     FaHeadset,
     FaCode,
-    FaLaptopCode
+    FaLaptopCode,
+    FaBriefcase
 } from "react-icons/fa";
 
 function Experience() {
@@ -23,6 +24,56 @@ function Experience() {
 
             {/* EXPERIENCE TIMELINE */}
             <div className="timeline">
+
+                {/* NEXUS TECHWORKS */}
+                <div className="timeline-item">
+                    <div className="timeline-icon">
+                        <FaBriefcase />
+                    </div>
+
+                    <div className="timeline-content">
+                        <h3>
+                            Founder & Software Developer
+                            <span>
+                                @ Nexus Techworks
+                            </span>
+                        </h3>
+
+                        <p className="timeline-duration">
+                            Jan 2024 - Present
+                            {" | "}
+                            India
+                        </p>
+
+                        <ul>
+                            <li>
+                                Founded and developed Nexus Techworks
+                                with a focus on software development,
+                                digital solutions, and technology-driven
+                                products.
+                            </li>
+
+                            <li>
+                                Designed and developed modern web
+                                applications using React.js, Node.js,
+                                MongoDB, and other modern technologies.
+                            </li>
+
+                            <li>
+                                Worked on AI-powered solutions,
+                                automation, educational platforms,
+                                and full-stack applications.
+                            </li>
+
+                            <li>
+                                Focused on learning, teaching, and
+                                building practical technology solutions
+                                for students and users.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
 
                 {/* AMAZON */}
                 <div className="timeline-item">
