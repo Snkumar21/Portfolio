@@ -1562,7 +1562,9 @@ body {
     border-color: rgba(0, 145, 255, 0.2);
 }
 
-/* CONTACT SECTION */
+/* =====================================================
+    CONTACT SECTION
+===================================================== */
 .contact {
     width: 90%;
     max-width: 1200px;
@@ -1793,7 +1795,9 @@ body {
     transform: translateY(-4px);
 }
 
-/* FOOTER */
+/* =====================================================
+    FOOTER SECTION
+===================================================== */
 .footer {
     display: flex;
     align-items: center;
