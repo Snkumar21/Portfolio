@@ -14,7 +14,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* NAVBAR */
+/* =====================================================
+    NAVBAR SECTION
+===================================================== */
 .navbar {
     width: 100%;
     padding: 18px 6%;
@@ -56,7 +58,9 @@ body {
     color: #0091ff;
 }
 
-/* HOME */
+/* =====================================================
+    HOME SECTION
+===================================================== */
 .intro {
     min-height: calc(100vh - 80px);
     display: flex;
@@ -814,7 +818,6 @@ body {
     margin: 0;
 }
 
-
 .timeline-item:nth-child(odd)
 .timeline-content ul {
     padding-left: 0;
@@ -960,7 +963,7 @@ body {
 }
 
 /* =====================================================
-   SKILLS SECTION
+    SKILLS SECTION
 ===================================================== */
 
 .skills {
