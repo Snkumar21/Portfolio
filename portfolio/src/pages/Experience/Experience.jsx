@@ -4,6 +4,7 @@ import {
     FaLaptopCode,
     FaBriefcase
 } from "react-icons/fa";
+import "./Experience.css";
 
 function Experience() {
     return (

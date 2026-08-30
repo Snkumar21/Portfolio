@@ -8,6 +8,7 @@ import {
     FaGithub,
     FaInstagram,
 } from "react-icons/fa6";
+import "./Contact.css";
 
 function Contact() {
     return (

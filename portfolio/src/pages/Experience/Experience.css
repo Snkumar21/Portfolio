@@ -1,0 +1,148 @@
+/* =====================================================
+    EXPERIENCE SECTION
+===================================================== */
+.experience {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.experience > h2 {
+    color: var(--primary-dark);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.experience-intro {
+    color: var(--text-secondary);
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 60px;
+}
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Vertical Line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: rgb(73, 54, 111, 0.6);
+    transform: translateX(-50%);
+}
+
+/* TIMELINE ITEM */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+}
+
+/* Left / Right Alternating */
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+/* TIMELINE ICON */
+.timeline-icon {
+    position: absolute;
+    top: 25px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--primary-light);
+    border: 2px solid var(--primary-dark);
+    color: var(--primary-dark);
+    font-size: 20px;
+    z-index: 2;
+    box-shadow: 0 0 15px rgba(115, 0, 255, 0.2);
+}
+
+/* Icon Position */
+.timeline-item:nth-child(odd) .timeline-icon {
+    right: -25px;
+}
+
+.timeline-item:nth-child(even) .timeline-icon {
+    left: -25px;
+}
+
+/* TIMELINE CONTENT*/
+.timeline-content {
+    padding: 25px;
+    border-radius: 15px;
+    background: linear-gradient( 135deg, #5F4A8B 0%, #523D7D 55%, #49366F 100% );
+    border: 1px solid rgba(254, 250, 205, 0.25);
+    box-shadow: 0 12px 30px rgba(95, 74, 139, 0.22);
+    transition: 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    border-color: rgba(254, 250, 205, 0.5);
+    box-shadow: 0 18px 40px rgba(95, 74, 139, 0.30);
+}
+
+/* Job Title */
+.timeline-content h3 {
+    color: var(--white-text-primary);
+    font-size: 1.35rem;
+    margin-bottom: 8px;
+}
+
+.timeline-content h3 span {
+    padding-left: 10px;
+    color: var(--white-text-secondary);
+    font-weight: 600;
+}
+
+/* Duration */
+.timeline-duration {
+    color: var(--white-text-third);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.timeline-content ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.timeline-item:nth-child(odd)
+.timeline-content ul {
+    padding-left: 0;
+    padding-right: 20px;
+    list-style-position: inside;
+}
+
+
+.timeline-content li {
+    color: var(--white-text-fourth);
+    line-height: 1.7;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}

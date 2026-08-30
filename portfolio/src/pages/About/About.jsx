@@ -10,7 +10,8 @@ import {
     FaBuilding
 } from "react-icons/fa";
 
-import profileLogo from "../assets/Img/Profile/me 4.png";
+import "./About.css";
+import profileLogo from "../../assets/Img/Profile/me 4.png";
 
 function About() {
     return (

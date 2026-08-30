@@ -1,16 +1,18 @@
 import React from "react";
-import CCPLChampions from "../assets/Img/Achievement/CCPL Champions.jpg";
-import IOTProjectDisplay from "../assets/Img/Achievement/IOT Project Display.jpg";
-import WinnerOfCodeDeBasanti from "../assets/Img/Achievement/Winner of Code De Basanti.jpg";
-import LastDayOfBBACA from "../assets/Img/Achievement/Last Day of BBA-CA.jpg";
-import ADYPUFreshersDay from "../assets/Img/Achievement/ADYPU Freshers Day.jpg";
-import EducathonRun from "../assets/Img/Achievement/Educathon Run.jpg";
-import ADPYUConvocation from "../assets/Img/Achievement/9th ADPYU Convocation.jpg";
-import HackthonWinner from "../assets/Img/Achievement/Hackthon Winner.jpg";
-import ProfileBuildingCommunication from "../assets/Img/Achievement/Profile Building Communication.jpg";
-import FreshersParty from "../assets/Img/Achievement/Freshers Party.jpg";
-import FarewellParty from "../assets/Img/Achievement/Farewell Party.JPG";
-import Amazon from "../assets/Img/Achievement/Amazon.jpg";
+import CCPLChampions from "../../assets/Img/Achievement/CCPL Champions.jpg";
+import IOTProjectDisplay from "../../assets/Img/Achievement/IOT Project Display.jpg";
+import WinnerOfCodeDeBasanti from "../../assets/Img/Achievement/Winner of Code De Basanti.jpg";
+import LastDayOfBBACA from "../../assets/Img/Achievement/Last Day of BBA-CA.jpg";
+import ADYPUFreshersDay from "../../assets/Img/Achievement/ADYPU Freshers Day.jpg";
+import EducathonRun from "../../assets/Img/Achievement/Educathon Run.jpg";
+import ADPYUConvocation from "../../assets/Img/Achievement/9th ADPYU Convocation.jpg";
+import HackthonWinner from "../../assets/Img/Achievement/Hackthon Winner.jpg";
+import ProfileBuildingCommunication from "../../assets/Img/Achievement/Profile Building Communication.jpg";
+import FreshersParty from "../../assets/Img/Achievement/Freshers Party.jpg";
+import FarewellParty from "../../assets/Img/Achievement/Farewell Party.JPG";
+import Amazon from "../../assets/Img/Achievement/Amazon.jpg";
+
+import "./Featured.css";
 
 function Featured() {
     const featuredMoments = [

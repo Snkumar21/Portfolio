@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { FaRocket, FaArrowRight, FaBuilding} from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import profileLogo from "../assets/Img/Profile/me 3.jpg";
-import backgroundImage from "../assets/Img/Profile/bg.png";
+
+import "./Home.css";
+import profileLogo from "../../assets/Img/Profile/me 3.jpg";
+import backgroundImage from "../../assets/Img/Profile/bg.png";
 
 function Home() {
     const navigate = useNavigate();

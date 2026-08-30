@@ -8,6 +8,7 @@ import {
     FaProjectDiagram,
     FaEnvelope
 } from "react-icons/fa";
+import "./Navbar.css";
 
 function Navbar() {
     return (

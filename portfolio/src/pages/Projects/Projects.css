@@ -1,0 +1,286 @@
+/* =========================================================
+    PROJECTS SECTION
+========================================================= */
+.projects {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+/* MAIN HEADING */
+.projects > h2 {
+    color: var(--primary);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.projects-intro {
+    max-width: 850px;
+    margin: 0 auto 60px;
+    text-align: center;
+    color: var(--primary-light);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* PROJECT SECTION HEADER */
+.project-section-header {
+    margin: 55px 0 25px;
+}
+
+.project-section-header h3 {
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.project-section-header p {
+    color: var(--primary-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* PROJECT GRID */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* PROJECT CARD */
+.project-card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( 135deg, #5F4A8B 0%, #523D7D 55%, #49366F 100% );
+    border: 1px solid rgba(254, 250, 205, 0.25);
+    box-shadow: 0 12px 30px rgba(95, 74, 139, 0.22);
+    border-radius: 18px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(106, 0, 255, 0.5);
+    box-shadow: 0 15px 40px rgba(0, 145, 255, 0.12);
+}
+
+/* PROJECT IMAGE */
+.project-image {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.06);
+}
+
+/* ACTIVE BADGE */
+.active-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: var(--primary-light);
+    color: var(--white-text-primary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 5px 15px rgba(115, 0, 255, 0.25);
+    z-index: 2;
+}
+
+/* PROJECT CONTENT */
+.project-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 22px;
+}
+
+/* PROJECT ICON */
+.project-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(252, 252, 252, 0.1);
+    color: var(--white-text-secondary);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* PROJECT TITLE */
+.project-content h3 {
+    color: var(--white-text-primary);
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+/* PROJECT DESCRIPTION */
+.project-content p {
+    color: var(--white-text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* TECHNOLOGIES */
+.project-tech {
+    display: block;
+    color: var(--white-text-secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* PROJECT META */
+.project-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 8px 0 18px;
+    font-size: 0.82rem;
+}
+
+.project-meta span {
+    line-height: 1.5;
+}
+
+.project-meta span:first-child {
+    color: var(--white-text-secondary);
+}
+
+.project-meta span:last-child {
+    color: var(--white-text-third);
+}
+
+/* VIEW PROJECT BUTTON */
+.view-project {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: auto;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 25px;
+    background: var(--primary-light);
+    color: var(--white-text-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
+}
+
+.view-project:hover {
+    background: var(--bg-secondary);
+    color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow:
+        0 8px 20px rgba(153, 0, 255, 0.2);
+}
+
+/* VIEW MORE SECTION */
+.view-more-container {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0 55px;
+}
+
+.view-more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px;
+    padding: 12px 28px;
+    border: 1px solid rgba(153, 0, 255, 0.5);
+    border-radius: 25px;
+    background: transparent;
+    color: var(--primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background: var(--primary);
+    color: var(--white-text-primary);
+    transform: translateY(-2px);
+    box-shadow:
+        0 8px 25px rgba(119, 0, 255, 0.2);
+}
+
+/* CREATIVE WORK SECTION */
+.creative-section {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* CREATIVE SUB HEADING */
+.creative-subheading {
+    margin: 35px 0 20px;
+}
+
+.creative-subheading h4 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* CREATIVE TYPE */
+.creative-type {
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: rgba(136, 0, 255, 0.1);
+    color: var(--bg-secondary);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* CREATIVE CARD */
+.creative-card .project-content p {
+    min-height: 0;
+}
+
+/* ACTIVE PROJECT CARD */
+.project-card:has(.active-badge) {
+    border-color: rgba(102, 0, 255, 0.2);
+}

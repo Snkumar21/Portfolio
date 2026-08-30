@@ -17,23 +17,25 @@ import {
     FaEye
 } from "react-icons/fa";
 
-import hubverse from "../assets/Img/Project/Website Img/HubVerse.png";
-import netflix from "../assets/Img/Project/Website Img/NetFlix Clone.png";
-import weather from "../assets/Img/Project/Website Img/weather application.png";
-import rentoring from "../assets/Img/Project/Website Img/rentoring system.png";
-import grievance from "../assets/Img/Project/Website Img/grivence system.png";
-import banking from "../assets/Img/Project/Website Img/banking system.png";
-import gamingLms from "../assets/Img/Project/Website Img/gaming learning management system.png";
-import ericChatBotV3 from "../assets/Img/Project/Website Img/Eric chat bot v-3.png";
+import "./Projects.css";
 
-import nexusArena from "../assets/Img/Project/Website Img/Nexus Arena.png";
-import nexusTechworks from "../assets/Img/Project/Website Img/Nexus Techworks.png";
-import PrathameshBD from "../assets/Img/Project/Website Img/Prathamesh Builders and Developers.png";
+import hubverse from "../../assets/Img/Project/Website Img/HubVerse.png";
+import netflix from "../../assets/Img/Project/Website Img/NetFlix Clone.png";
+import weather from "../../assets/Img/Project/Website Img/weather application.png";
+import rentoring from "../../assets/Img/Project/Website Img/rentoring system.png";
+import grievance from "../../assets/Img/Project/Website Img/grivence system.png";
+import banking from "../../assets/Img/Project/Website Img/banking system.png";
+import gamingLms from "../../assets/Img/Project/Website Img/gaming learning management system.png";
+import ericChatBotV3 from "../../assets/Img/Project/Website Img/Eric chat bot v-3.png";
 
-import MauliSolar from "../assets/Img/Project/Designs/Mauli Solar Solution.png";
-import DBHITECH from "../assets/Img/Project/Designs/DB HI-Tech Solar Energy PVT LTD.png";
-import epicMaut from "../assets/Img/Project/Designs/Epic Maut.png";
-import shoes from "../assets/Img/Project/Designs/Shoes.png";
+import nexusArena from "../../assets/Img/Project/Website Img/Nexus Arena.png";
+import nexusTechworks from "../../assets/Img/Project/Website Img/Nexus Techworks.png";
+import PrathameshBD from "../../assets/Img/Project/Website Img/Prathamesh Builders and Developers.png";
+
+import MauliSolar from "../../assets/Img/Project/Designs/Mauli Solar Solution.png";
+import DBHITECH from "../../assets/Img/Project/Designs/DB HI-Tech Solar Energy PVT LTD.png";
+import epicMaut from "../../assets/Img/Project/Designs/Epic Maut.png";
+import shoes from "../../assets/Img/Project/Designs/Shoes.png";
 
 function Projects() {
     const [showAllProjects, setShowAllProjects] = useState(false);

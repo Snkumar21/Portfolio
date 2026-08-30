@@ -35,11 +35,13 @@ import {
     SiFigma
 } from "react-icons/si";
 
-import angular from "../assets/Img/Skills_Icon/Angular.png";
-import cLanguage from "../assets/Img/Skills_Icon/C.png";
-import vscode from "../assets/Img/Skills_Icon/vs code.png";
-import render from "../assets/Img/Skills_Icon/render.jpeg";
-import canva from "../assets/Img/Skills_Icon/canva.png";
+import "./Skills.css";
+
+import angular from "../../assets/Img/Skills_Icon/Angular.png";
+import cLanguage from "../../assets/Img/Skills_Icon/C.png";
+import vscode from "../../assets/Img/Skills_Icon/vs code.png";
+import render from "../../assets/Img/Skills_Icon/render.jpeg";
+import canva from "../../assets/Img/Skills_Icon/canva.png";
 
 function Skills() {
 
