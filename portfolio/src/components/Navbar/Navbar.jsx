@@ -8,88 +8,78 @@ import {
     FaProjectDiagram,
     FaEnvelope
 } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
+import Dock from "./Dock";
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({ navigateWithTransition }) {
+    const location = useLocation();
+
+    const items = [
+        {
+            label: "Home",
+            path: "/"
+        },
+        {
+            label: "About",
+            path: "/about"
+        },
+        {
+            label: "Experience",
+            path: "/experience"
+        },
+        {
+            label: "Featured",
+            path: "/featured"
+        },
+        {
+            label: "Skills",
+            path: "/skills"
+        },
+        {
+            label: "Projects",
+            path: "/projects"
+        },
+        {
+            label: "Contact",
+            path: "/contact"
+        }
+    ].map((item) => ({
+        ...item,
+
+        active:
+            location.pathname === item.path,
+
+        onClick: () => {
+            if (location.pathname !== item.path) {
+                navigateWithTransition(item.path);
+            }
+        }
+    }));
+
     return (
         <header className="navbar">
-            <div className="navbar-logo">
+            <div
+                className="navbar-logo"
+                onClick={() =>
+                    navigateWithTransition("/")
+                }
+            >
                 <h2>
-                    Software <span>Developer</span>
+                    Software{" "}
+                    <span>Developer</span>
                 </h2>
             </div>
 
-            <nav className="nav">
-                <NavLink
-                    to="/"
-                    className={({ isActive }) =>
-                        isActive ? "active" : ""
-                    }
-                >
-                    <FaHome />
-                    <span>Home</span>
-                </NavLink>
+            {/* DOCK NAVIGATION */}
+            <Dock
+                items={items}
+                panelHeight={58}
+                baseItemSize={70}
+                magnification={1.07}
+                distance={110}
+            />
 
-                <NavLink
-                    to="/about"
-                    className={({ isActive }) =>
-                        isActive ? "active" : ""
-                    }
-                >
-                    <FaUser />
-                    <span>About</span>
-                </NavLink>
-
-                <NavLink
-                    to="/experience"
-                    className={({ isActive }) =>
-                        isActive ? "active" : ""
-                    }
-                >
-                    <FaBriefcase />
-                    <span>Experience</span>
-                </NavLink>
-
-                <NavLink
-                    to="/featured"
-                    className={({ isActive }) =>
-                        isActive ? "active" : ""
-                    }
-                >
-                    <FaImages />
-                    <span>Featured</span>
-                </NavLink>
-
-                <NavLink
-                    to="/skills"
-                    className={({ isActive }) =>
-                        isActive ? "active" : ""
-                    }
-                >
-                    <FaCode />
-                    <span>Skills</span>
-                </NavLink>
-
-                <NavLink
-                    to="/projects"
-                    className={({ isActive }) =>
-                        isActive ? "active" : ""
-                    }
-                >
-                    <FaProjectDiagram />
-                    <span>Projects</span>
-                </NavLink>
-
-                <NavLink
-                    to="/contact"
-                    className={({ isActive }) =>
-                        isActive ? "active" : ""
-                    }
-                >
-                    <FaEnvelope />
-                    <span>Contact</span>
-                </NavLink>
-            </nav>
         </header>
     );
 }

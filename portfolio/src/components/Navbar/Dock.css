@@ -1,0 +1,122 @@
+/* DOCK PANEL */
+.dock-panel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 6px;
+    padding: 7px 10px;
+    border-radius: 18px;
+    background: rgba(254, 250, 205, 0.07);
+    border: 1px solid rgba(254, 250, 205, 0.16);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 10px 30px rgba(30, 18, 50, 0.18);
+}
+
+.dock-outer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.dock-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: max-content;
+    padding: 9px 13px;
+    border: 1px solid transparent;
+    border-radius: 11px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.72);
+    font-family: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+    transform-origin: center bottom;
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.dock-text {
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    pointer-events: none;
+}
+
+.dock-item:hover {
+    background: rgba(254, 250, 205, 0.12);
+    border-color: rgba(254, 250, 205, 0.25);
+    color: #FEFACD;
+    box-shadow: 0 8px 20px rgba(30, 18, 50, 0.15);
+}
+
+.dock-item.active {
+    background: #FEFACD;
+    color: #5F4A8B;
+    border-color: #FEFACD;
+    font-weight: 700;
+    box-shadow: 0 7px 20px rgba(254, 250, 205, 0.16);
+}
+
+/* ACTIVE DOT */
+.dock-item.active::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #FEFACD;
+    transform: translateX(-50%);
+    box-shadow:
+        0 0 8px
+        rgba(254, 250, 205, 0.8);
+}
+
+/* =====================================================
+    MOBILE
+===================================================== */
+@media (max-width: 668px) {
+    .dock-outer {
+        width: 100%;
+        height: auto !important;
+    }
+
+    .dock-panel {
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 3px;
+        padding: 6px;
+        -ms-overflow-style: none;
+    }
+
+    .dock-panel::-webkit-scrollbar {
+        display: none;
+    }
+
+    @supports (scrollbar-width: none) {
+        .dock-panel {
+            scrollbar-width: none;
+        }
+    }
+
+    .dock-item {
+        flex-shrink: 0;
+        padding: 8px 11px;
+        transform: none !important;
+    }
+
+    .dock-text {
+        font-size: 0.78rem;
+    }
+}
