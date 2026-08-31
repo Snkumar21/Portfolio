@@ -36,18 +36,34 @@
     position: relative;
     height: 350px;
     overflow: hidden;
-    border-radius: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    background: #111;
-    box-shadow: 0 0 20px rgba(0, 145, 255, 0.05);
+    border-radius: 20px;
+    padding: 0;
+    background:
+        linear-gradient(
+            135deg,
+            #5F4A8B,
+            #49366F
+        );
+    border:
+        1px solid
+        rgba(95, 74, 139, 0.20);
+    box-shadow:
+        0 12px 30px
+        rgba(95, 74, 139, 0.12);
     transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
 }
 
 .featured-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 145, 255, 0.15);
+    transform:
+        translateY(-8px);
+    border-color:
+        rgba(95, 74, 139, 0.35);
+    box-shadow:
+        0 20px 45px
+        rgba(95, 74, 139, 0.22);
 }
 
 /* IMAGE */
@@ -56,17 +72,29 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.5s ease;
+    transition:
+        transform 0.6s
+        cubic-bezier(
+            0.16,
+            1,
+            0.3,
+            1
+        ),
+        filter 0.4s ease;
 }
 
 .featured-item:hover img {
-    transform: scale(1.08);
+    transform: scale(1.07);
+    filter:
+        brightness(0.82)
+        saturate(1.05);
 }
 
 /* OVERLAY */
 .featured-overlay {
     position: absolute;
     inset: 0;
+    z-index: 4;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -74,15 +102,22 @@
     background:
         linear-gradient(
             to top,
-            rgba(0, 0, 0, 0.95),
-            rgba(0, 0, 0, 0.55),
+            rgba(56, 40, 85, 0.98),
+            rgba(73, 54, 111, 0.72),
+            rgba(95, 74, 139, 0.20),
             transparent
         );
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateY(20px);
     transition:
         opacity 0.35s ease,
-        transform 0.35s ease;
+        transform 0.4s
+        cubic-bezier(
+            0.16,
+            1,
+            0.3,
+            1
+        );
 }
 
 .featured-item:hover
@@ -93,26 +128,29 @@
 
 /* TEXT */
 .featured-overlay h3 {
-    color: #ffffff;
-    font-size: 1.25rem;
+    color: #FEFACD;
+    font-size: 1.2rem;
     margin-bottom: 10px;
     line-height: 1.4;
 }
 
 .featured-overlay p {
-    color: #ccc;
-    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.88rem;
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
 /* KNOW MORE */
 .featured-overlay a {
+    position: relative;
     width: fit-content;
-    color: var(--primary);
-    font-weight: bold;
+    color: #FEFACD;
+    font-weight: 700;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
 }
 
 .featured-overlay a:hover {

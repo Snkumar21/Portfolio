@@ -13,6 +13,7 @@ import FarewellParty from "../../assets/Img/Achievement/Farewell Party.JPG";
 import Amazon from "../../assets/Img/Achievement/Amazon.jpg";
 
 import "./Featured.css";
+import SpotlightCard from "../../components/SpotlightCard/SpotlightCard";
 
 function Featured() {
     const featuredMoments = [
@@ -120,9 +121,10 @@ function Featured() {
             {/* FEATURED GALLERY */}
             <div className="featured-gallery">
                 {featuredMoments.map((moment, index) => (
-                    <div
-                        className="featured-item"
+                    <SpotlightCard
                         key={index}
+                        className="featured-item"
+                        spotlightColor="rgba(254, 250, 205, 0.20)"
                     >
                         {/* Image */}
                         <img
@@ -150,7 +152,7 @@ function Featured() {
                                 </a>
                             )}
                         </div>
-                    </div>
+                    </SpotlightCard>
                 ))}
             </div>
         </section>
