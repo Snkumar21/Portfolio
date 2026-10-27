@@ -49,10 +49,8 @@ function Home() {
                 </h1>
 
                 <p className="intro-role">
-                    Software Developer |
-                    AI/ML |
-                    Automation |
-                    Full-Stack Development
+                    Software Developer - MERN Stack, Shopify Developer, AI/ML Developer | Automation Specialist |
+                    Social Media Manager | Digital Marketing Specialist | SEO Specialist
                 </p>
 
                 {/* Founder Badge */}
